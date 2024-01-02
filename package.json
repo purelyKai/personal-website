@@ -1,0 +1,16 @@
+{
+    "name": "my-express-react-app",
+    "version": "1.0.0",
+    "description": "Express-React App",
+    "scripts": {
+        "start": "concurrently \"npm run server\" \"npm run client\"",
+        "server": "cd server && node index.js",
+        "client": "cd client && npm start",
+        "build": "cd client && npm run build"
+    },
+    "dependencies": {
+        "concurrently": "^6.0.2"
+    },
+    "devDependencies": {},
+    "private": true
+}
